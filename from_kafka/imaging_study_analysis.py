@@ -14,7 +14,7 @@ from pyspark.sql.types import StringType
 
 
 class Settings(BaseSettings):
-    output_folder: str = "~/opal-output"
+    output_folder: str = "~/csv-output"
     output_filename: str = "analysis-results.csv"
     kafka_topic_year_suffix: str = ""
     kafka_imaging_study_topic: str = "fhir.pacs.imagingStudy"
