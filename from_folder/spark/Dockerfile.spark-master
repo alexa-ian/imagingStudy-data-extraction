@@ -1,0 +1,10 @@
+FROM spark-base
+
+# -- Runtime
+
+ARG spark_master_web_ui=8080
+#add application web ui (hopefully here and not in master) and expose it
+ARG spark_ui_port=4040
+
+EXPOSE ${spark_master_web_ui} ${SPARK_MASTER_PORT} ${spark_ui_port}
+CMD bin/spark-class org.apache.spark.deploy.master.Master >> logs/spark-master.out
