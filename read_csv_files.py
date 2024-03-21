@@ -27,12 +27,12 @@ def read_csv_files(input_files, output_file):
         for value in sorted(unique_values):
             writer.writerow([value, sum_per_value[value]])
 
-input_files = ['./master-thesis/scripts/data-extraction/pathling-imaging-studies/from_folder/volume/csv-output/result_laterality_L_bodySite_partition_0-1.csv', 
-               './master-thesis/scripts/data-extraction/pathling-imaging-studies/from_folder/volume/csv-output/result_laterality_L_bodySite_partition_2-3.csv',
-               './master-thesis/scripts/data-extraction/pathling-imaging-studies/from_folder/volume/csv-output/result_laterality_L_bodySite_partition_4-5.csv',
-               './master-thesis/scripts/data-extraction/pathling-imaging-studies/from_folder/volume/csv-output/result_laterality_L_bodySite_partition_6-7.csv',
-               './master-thesis/scripts/data-extraction/pathling-imaging-studies/from_folder/volume/csv-output/result_laterality_L_bodySite_partition_8-9.csv',
-               './master-thesis/scripts/data-extraction/pathling-imaging-studies/from_folder/volume/csv-output/result_laterality_L_bodySite_partition_10-11.csv'
+input_files = ['./csv-output/result_laterality_L_bodySite_partition_0-1.csv', 
+               './csv-output/result_laterality_L_bodySite_partition_2-3.csv',
+               './csv-output/result_laterality_L_bodySite_partition_4-5.csv',
+               './csv-output/result_laterality_L_bodySite_partition_6-7.csv',
+               './csv-output/result_laterality_L_bodySite_partition_8-9.csv',
+               './csv-output/result_laterality_L_bodySite_partition_10-11.csv'
                ]
 output_file = './output_laterality_L_bodySite.csv'
 read_csv_files(input_files, output_file)
